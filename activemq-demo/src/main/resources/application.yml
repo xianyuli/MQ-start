@@ -5,14 +5,14 @@ spring:
   application:
     name: activemq-demo
   activemq:
-    # MQËùÔÚµÄ·şÎñÆ÷µÄµØÖ·
+    # MQæ‰€åœ¨çš„æœåŠ¡å™¨çš„åœ°å€
     broker-url: tcp://192.168.154.129:61616
-    # ÊÇ·ñÊ¹ÓÃÄÚÖÃµÄMQ£¬ true  Ê¹ÓÃ£» fale  ²»Ê¹ÓÃ
+    # æ˜¯å¦ä½¿ç”¨å†…ç½®çš„MQï¼Œ true  ä½¿ç”¨ï¼› fale  ä¸ä½¿ç”¨
     in-memory: false
-    # ÊÇ·ñÔÚ»Ø¹ö»Ø¹öÏûÏ¢Ö®Ç°Í£Ö¹ÏûÏ¢´«µİ¡£ÕâÒâÎ¶×Åµ±ÆôÓÃ´ËÃüÁîÊ±£¬ÏûÏ¢Ë³Ğò²»»á±»±£Áô¡£
+    # æ˜¯å¦åœ¨å›æ»šå›æ»šæ¶ˆæ¯ä¹‹å‰åœæ­¢æ¶ˆæ¯ä¼ é€’ã€‚è¿™æ„å‘³ç€å½“å¯ç”¨æ­¤å‘½ä»¤æ—¶ï¼Œæ¶ˆæ¯é¡ºåºä¸ä¼šè¢«ä¿ç•™ã€‚
     non-blocking-redelivery: false
     user: admin
     password: admin
 #  jms:
-#    # ÏûÏ¢ÀàĞÍ Ä¬ÈÏÖµÎªfalse£¬  false£ºqueue true£ºtopic
+#    # æ¶ˆæ¯ç±»å‹ é»˜è®¤å€¼ä¸ºfalseï¼Œ  falseï¼šqueue trueï¼štopic
 #    pub-sub-domain: true

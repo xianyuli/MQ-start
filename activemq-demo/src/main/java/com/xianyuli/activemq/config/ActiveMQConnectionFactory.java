@@ -21,6 +21,7 @@ public class ActiveMQConnectionFactory {
     public JmsListenerContainerFactory topicListenerContainerFactory(ConnectionFactory connectionFactory){
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
         factory.setConnectionFactory(connectionFactory);
+        //订阅模式
         factory.setPubSubDomain(true);
         return factory;
     }
