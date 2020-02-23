@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: rocketmq-demo
+
+rocketmq:
+  producer:
+    groupName: ${spring.application.name}
+    namesrvAddr: 192.168.154.129:9876
+    transactionGroupName: ${spring.application.name}-transaction
+  consumer:
+    groupName: ${spring.application.name}
+    namesrvAddr: 192.168.154.129:9876
+    transactionGroupName: ${spring.application.name}-transaction
+
