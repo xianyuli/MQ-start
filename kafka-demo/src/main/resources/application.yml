@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: kafka-demo
+  kafka:
+    bootstrap-servers: 192.168.154.129:9092
+    producer:
+      bootstrap-servers: 192.168.154.129:9092
+    consumer:
+      group-id: my.topic.group.1
+      auto-offset-reset: latest
+      enable-auto-commit: true
+      auto-commit-interval: 20000
